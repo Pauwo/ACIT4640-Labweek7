@@ -86,7 +86,7 @@ This command does the following:
 Once the playbook ran successfully, I opened a browser and navigated to the public IP or DNS of either EC2 instance to check that Nginx was running:
 
 ```
-http://<Public_IP_or_DNS_of_EC2_Instance_1>
+http://35.91.73.66
 ```
 
 I saw the static website served by Nginx.
