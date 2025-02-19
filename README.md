@@ -13,7 +13,7 @@ This repository contains the files necessary to configure EC2 instances using An
 
 ### 1. Generate a New SSH Key
 
-Run the following command to generate a new SSH key pair and add it to the `~/.ssh/` directory.
+To generate a new SSH key pair and save it to the `~/.ssh/` directory, I ran:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -f ~/.ssh/aws -N ""
@@ -26,7 +26,7 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/aws -N ""
 
 ### 2. Import the Public Key to AWS
 
-Use the provided `import_lab_key` script to upload the public key to AWS. This will allow Ansible to authenticate using the `aws` SSH key.
+After generating the SSH key pair, I used the `import_lab_key` script to upload the public key to AWS so that Ansible can authenticate using the `aws` SSH key.
 
 ```bash
 ./import_lab_key ~/.ssh/aws.pub
@@ -46,7 +46,7 @@ Terraform will output the public IPs and DNS names for your EC2 instances.
 
 ### 4. Update the Ansible Inventory File
 
-Edit the `ansible/inventory/hosts.yml` file to include the public IPs or DNS names of your EC2 instances. The file should look something like this:
+Edit the `ansible/inventory/hosts.yml` file to include the public IPs or DNS names of your EC2 instances. My file looked like this:
 
 ```yaml
 all:
