@@ -91,6 +91,11 @@ http://35.91.73.66
 
 I saw the static website served by Nginx.
 
+### Screenshot
+
+Here is a screenshot of the rendered HTML page from one of my servers:
+![Web Page Screenshot](Lab7ServerSS.png)
+
 ---
 
 ## Cleanup
