@@ -1,4 +1,4 @@
-# ACIT 4640 - Lab Week 7: Ansible Configuration for EC2 Instances
+# ACIT 4640 - Lab Week 7
 
 This repository contains the files necessary to configure EC2 instances using Ansible. The playbook installs Nginx, sets up directories, and configures the Nginx server for a simple static site.
 
