@@ -1,7 +1,3 @@
-
-
----
-
 # ACIT 4640 - Lab Week 7: Ansible Configuration for EC2 Instances
 
 This repository contains the files necessary to configure EC2 instances using Ansible. The playbook installs Nginx, sets up directories, and configures the Nginx server for a simple static site.
@@ -111,5 +107,3 @@ Additionally, you can delete the SSH key from AWS using the `delete_lab_key` scr
 ```bash
 ./delete_lab_key
 ```
-
----
